@@ -1,0 +1,786 @@
+{
+  "format": "sentence",
+  "tagset_family": "xpos",
+  "num_sentences": 2077,
+  "num_tokens": 25455,
+  "mismatched_sentence_lengths": 0,
+  "global": {
+    "accuracy": 0.9119230013749754,
+    "precision_micro": 0.9119230013749754,
+    "recall_micro": 0.9119230013749754,
+    "f1_micro": 0.9119230013749754,
+    "precision_macro": 0.7810144303520933,
+    "recall_macro": 0.7898812532519907,
+    "f1_macro": 0.7752658205565681,
+    "precision_weighted": 0.9049216584858039,
+    "recall_weighted": 0.9119230013749754,
+    "f1_weighted": 0.9061000709855959
+  },
+  "metric_notes": {
+    "accuracy": "Token-level accuracy: percent of tokens whose tag matches gold.",
+    "micro": "Micro-averaged over tokens. For single-label token classification, micro precision/recall/F1 \u2248 accuracy.",
+    "macro": "Macro-averaged across labels (each label equal weight). Sensitive to rare labels.",
+    "weighted": "Weighted average across labels (weights = support)."
+  },
+  "per_sentence": {
+    "exact_match_accuracy": 0.43476167549350025,
+    "num_exact": 903,
+    "num_sentences": 2077
+  },
+  "labels": [
+    "$",
+    "''",
+    ",",
+    "-LRB-",
+    "-RRB-",
+    ".",
+    ":",
+    "ADD",
+    "AFX",
+    "CC",
+    "CD",
+    "DT",
+    "EX",
+    "FW",
+    "GW",
+    "HYPH",
+    "IN",
+    "JJ",
+    "JJR",
+    "JJS",
+    "LS",
+    "MD",
+    "NFP",
+    "NN",
+    "NNP",
+    "NNPS",
+    "NNS",
+    "PDT",
+    "POS",
+    "PRP",
+    "PRP$",
+    "RB",
+    "RBR",
+    "RBS",
+    "RP",
+    "SYM",
+    "TO",
+    "UH",
+    "VB",
+    "VBD",
+    "VBG",
+    "VBN",
+    "VBP",
+    "VBZ",
+    "WDT",
+    "WP",
+    "WRB",
+    "XX",
+    "_",
+    "``"
+  ],
+  "confusion_matrix_csv": "spacy_test/confusion_matrix.csv",
+  "confusion_matrix_png": "spacy_test/confusion_matrix.png",
+  "per_class_csv": "spacy_test/per_class_metrics.csv",
+  "wrong_sentences_csv": "spacy_test/wrong_sentences.csv",
+  "pairs": {
+    "ADJ+NOUN": {
+      "tp": 777,
+      "fp": 37,
+      "fn": 119,
+      "precision": 0.9545454545454546,
+      "recall": 0.8671875,
+      "f1": 0.9087719298245613
+    },
+    "NOUN+NOUN": {
+      "tp": 370,
+      "fp": 69,
+      "fn": 192,
+      "precision": 0.8428246013667426,
+      "recall": 0.6583629893238434,
+      "f1": 0.7392607392607393
+    },
+    "PROPN+PROPN": {
+      "tp": 548,
+      "fp": 298,
+      "fn": 54,
+      "precision": 0.6477541371158393,
+      "recall": 0.9102990033222591,
+      "f1": 0.7569060773480664
+    },
+    "ADJ+PROPN": {
+      "tp": 21,
+      "fp": 38,
+      "fn": 16,
+      "precision": 0.3559322033898305,
+      "recall": 0.5675675675675675,
+      "f1": 0.4375
+    }
+  },
+  "pair_examples": {
+    "ADJ+NOUN": {
+      "false_positives": [
+        {
+          "sentence_index": 29,
+          "position": 15,
+          "pair_words": "anti-proliferation treaty",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "They are certainly being nasty to the United Nations Security Council in connection with the anti-proliferation treaty ."
+        },
+        {
+          "sentence_index": 113,
+          "position": 11,
+          "pair_words": "foiled plot",
+          "gold_pair": "VERB+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "VBN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "U.S. Muslim groups criticized President Bush on Thursday for calling a foiled plot to blow up airplanes part of a \" war with Islamic fascists , \" saying the term could inflame anti-Muslim tensions ."
+        },
+        {
+          "sentence_index": 162,
+          "position": 15,
+          "pair_words": "extremist form",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "Because Usamah is Saudi , my guess is that they were especially influenced by an extremist form of the Wahhabi school of Islam that predominates among Saudia's Saudia 's some 15 million citizens ."
+        },
+        {
+          "sentence_index": 199,
+          "position": 55,
+          "pair_words": "Islamist terrorists",
+          "gold_pair": "PROPN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNS"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNS"
+          ],
+          "sentence_text": "Dick could never thereafter get any real cooperation from the cabinet officers , who outranked him , and he could not convince them to go to battle stations in the summer of 2001 when George Tenet's Tenet 's hair was \" on fire \" about the excited chatter the CIA was picking up from radical Islamist terrorists ."
+        },
+        {
+          "sentence_index": 331,
+          "position": 6,
+          "pair_words": "more lsu",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "JJR",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJR",
+            "NN"
+          ],
+          "sentence_text": "can't ca n't go to any more lsu games unless i get a free ticket ."
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 1,
+          "position": 19,
+          "pair_words": "fledged operating",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "VERB+NOUN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "VBN",
+            "NN"
+          ],
+          "sentence_text": "What if Google expanded on its search - engine ( and now e-mail ) wares into a full - fledged operating system ?"
+        },
+        {
+          "sentence_index": 3,
+          "position": 12,
+          "pair_words": "little nostalgic",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+ADJ",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "JJ"
+          ],
+          "sentence_text": "( And , by the way , is anybody else just a little nostalgic for the days when that was a good thing ? )"
+        },
+        {
+          "sentence_index": 25,
+          "position": 8,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "The United States doesn't does n't believe the Iranian Government ."
+        },
+        {
+          "sentence_index": 26,
+          "position": 4,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "One can suspect the Iranian Government ."
+        },
+        {
+          "sentence_index": 28,
+          "position": 9,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "I read an Article in Time magazine accusing the Iranian Government of being willing to start a nuclear war and I sympathise with the Article ."
+        }
+      ]
+    },
+    "NOUN+NOUN": {
+      "false_positives": [
+        {
+          "sentence_index": 52,
+          "position": 3,
+          "pair_words": "concurring opinion",
+          "gold_pair": "VERB+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "VBG",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "BREYER filed a concurring opinion , in which KENNEDY , SOUTER , and GINSBURG joined ."
+        },
+        {
+          "sentence_index": 68,
+          "position": 12,
+          "pair_words": "PR display",
+          "gold_pair": "PROPN+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "So hear we are , two weeks later , after that dazzling PR display two weeks ago by Powell and Annan , and the situation on the ground in Darfur appears basically unchanged ."
+        },
+        {
+          "sentence_index": 196,
+          "position": 13,
+          "pair_words": "counter-terrorism divisions",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNS"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NNS"
+          ],
+          "sentence_text": "Imperial Hubris makes the case that lots of people in the CIA and counter-terrorism divisions elsewhere in the US government knew all about Bin Laden and the threat he posed ."
+        },
+        {
+          "sentence_index": 219,
+          "position": 12,
+          "pair_words": "matt time",
+          "gold_pair": "PROPN+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "want to go to dinner with me before you have your ' matt time ' ?"
+        },
+        {
+          "sentence_index": 253,
+          "position": 7,
+          "pair_words": "girl paige",
+          "gold_pair": "NOUN+PROPN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "i want to hook up with that girl paige in the brown leather jacket ."
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 15,
+          "position": 10,
+          "pair_words": "beheading video's",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "VERB+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NNS"
+          ],
+          "pred_tags_pair": [
+            "VBG",
+            "NNS"
+          ],
+          "sentence_text": "On the next two pictures he took screenshots of two beheading video's ."
+        },
+        {
+          "sentence_index": 29,
+          "position": 15,
+          "pair_words": "anti-proliferation treaty",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "They are certainly being nasty to the United Nations Security Council in connection with the anti-proliferation treaty ."
+        },
+        {
+          "sentence_index": 59,
+          "position": 63,
+          "pair_words": "A section",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "DET+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "DT",
+            "NN"
+          ],
+          "sentence_text": "Important news such as President Bush's Bush 's miniscule calibrations on his marriage amendment / anti-gay ( update : he's he 's not against gays in the bedroom , just at the altar , where of course their relationships should not only be frowned upon but should be constitutionally excluded ) has pushed Sudan not just off the front pages , or the A section , but out of the NY Times and Washington Post completely ."
+        },
+        {
+          "sentence_index": 152,
+          "position": 21,
+          "pair_words": "airline travel",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "NOUN+VERB",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "VB"
+          ],
+          "sentence_text": "But because we don't do n't want to sound hateful we must pretend everyone's everyone 's a possible suspect and make airline travel more miserable than it's it 's ever been ."
+        },
+        {
+          "sentence_index": 162,
+          "position": 15,
+          "pair_words": "extremist form",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "Because Usamah is Saudi , my guess is that they were especially influenced by an extremist form of the Wahhabi school of Islam that predominates among Saudia's Saudia 's some 15 million citizens ."
+        }
+      ]
+    },
+    "PROPN+PROPN": {
+      "false_positives": [
+        {
+          "sentence_index": 0,
+          "position": 2,
+          "pair_words": "Google Morphed",
+          "gold_pair": "PROPN+VERB",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "VBD"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "What if Google Morphed Into GoogleOS ?"
+        },
+        {
+          "sentence_index": 4,
+          "position": 5,
+          "pair_words": "Google's Google",
+          "gold_pair": "_+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "_",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNPS",
+            "NNP"
+          ],
+          "sentence_text": "This BuzzMachine post argues that Google's Google 's rush toward ubiquity might backfire -- which we've we 've all heard before , but it's it 's particularly well - put in this post ."
+        },
+        {
+          "sentence_index": 18,
+          "position": 15,
+          "pair_words": "US Military",
+          "gold_pair": "PROPN+NOUN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "This Fallujah operation my turn out to be the most important operation done by the US Military since the end of the war ."
+        },
+        {
+          "sentence_index": 19,
+          "position": 8,
+          "pair_words": "Google's Google",
+          "gold_pair": "_+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "_",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNPS",
+            "NNP"
+          ],
+          "sentence_text": "Let me join the chorus of annoyance over Google's Google 's new toolbar , which , as noted in the linked article , commits just about every sin an online marketer could commit , and makes up a few new ones besides ."
+        },
+        {
+          "sentence_index": 25,
+          "position": 2,
+          "pair_words": "States doesn't",
+          "gold_pair": "PROPN+_",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "NNPS",
+            "_"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "The United States doesn't does n't believe the Iranian Government ."
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 28,
+          "position": 5,
+          "pair_words": "Time magazine",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "PROPN+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "sentence_text": "I read an Article in Time magazine accusing the Iranian Government of being willing to start a nuclear war and I sympathise with the Article ."
+        },
+        {
+          "sentence_index": 98,
+          "position": 1,
+          "pair_words": "Iraqi Islamic",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "The Iraqi Islamic Party lead by Muhsin Abdul Hamid , has been among the few Sunni Muslim groups willing to cooperate ( even if rather lukewarmly ) with the Americans ."
+        },
+        {
+          "sentence_index": 137,
+          "position": 6,
+          "pair_words": "London E5",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "PROPN+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "sentence_text": "Abdul Muneem Patel , 17 , London E5"
+        },
+        {
+          "sentence_index": 142,
+          "position": 0,
+          "pair_words": "Qayyum Abdul",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "NOUN+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNS",
+            "NNP"
+          ],
+          "sentence_text": "Qayyum Abdul Jamal , 43 , Mississauga ;"
+        },
+        {
+          "sentence_index": 153,
+          "position": 12,
+          "pair_words": "Tawhid wa",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "PROPN+VERB",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "VBD"
+          ],
+          "sentence_text": "On the internet site of Monotheism and Holy War ( al - Tawhid wa al - Jihad ) , the group allegedly declared , \" We announce that the Tawhid and Jihad Group , its prince and soldiers , have pledged allegiance to the sheikh of the mujahideen Osama bin Laden . \""
+        }
+      ]
+    },
+    "ADJ+PROPN": {
+      "false_positives": [
+        {
+          "sentence_index": 25,
+          "position": 8,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "The United States doesn't does n't believe the Iranian Government ."
+        },
+        {
+          "sentence_index": 26,
+          "position": 4,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "One can suspect the Iranian Government ."
+        },
+        {
+          "sentence_index": 28,
+          "position": 9,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "I read an Article in Time magazine accusing the Iranian Government of being willing to start a nuclear war and I sympathise with the Article ."
+        },
+        {
+          "sentence_index": 98,
+          "position": 1,
+          "pair_words": "Iraqi Islamic",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "The Iraqi Islamic Party lead by Muhsin Abdul Hamid , has been among the few Sunni Muslim groups willing to cooperate ( even if rather lukewarmly ) with the Americans ."
+        },
+        {
+          "sentence_index": 98,
+          "position": 14,
+          "pair_words": "few Sunni",
+          "gold_pair": "ADJ+ADJ",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "JJ"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "The Iraqi Islamic Party lead by Muhsin Abdul Hamid , has been among the few Sunni Muslim groups willing to cooperate ( even if rather lukewarmly ) with the Americans ."
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 68,
+          "position": 11,
+          "pair_words": "dazzling PR",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "VERB+NOUN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "VBG",
+            "NN"
+          ],
+          "sentence_text": "So hear we are , two weeks later , after that dazzling PR display two weeks ago by Powell and Annan , and the situation on the ground in Darfur appears basically unchanged ."
+        },
+        {
+          "sentence_index": 100,
+          "position": 9,
+          "pair_words": "Sunni Arabs",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNPS"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNPS"
+          ],
+          "sentence_text": "The IIP had also been the main force urging Sunni Arabs to participate in the elections scheduled for January , and had been opposed in this stance by the Association of Muslim Scholars ."
+        },
+        {
+          "sentence_index": 101,
+          "position": 19,
+          "pair_words": "Sunni Arab",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "That the Iraqi Islamic Party is now contemplating leaving the Allawi government raises the question of whether a mass Sunni Arab boycott of the elections is in the offing , thus fatally weakening the legitimacy of any new government ."
+        },
+        {
+          "sentence_index": 104,
+          "position": 1,
+          "pair_words": "Sunni AMS",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "The Sunni AMS told Iraqis , \" You sinned when you participated with occupation forces in the assault on Najaf , and beware lest you repeat this same sin in Fallujah ."
+        },
+        {
+          "sentence_index": 106,
+          "position": 2,
+          "pair_words": "Shiite Sadr",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "The radical Shiite Sadr movement issued a statement forbidding the participation of Iraqi troops in the attack on Fallujah , as well ."
+        }
+      ]
+    }
+  }
+}

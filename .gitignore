@@ -1,0 +1,7 @@
+.idea/
+
+data/
+
+*.pdf
+
+**/wrong_sentences.csv

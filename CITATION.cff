@@ -1,0 +1,136 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite this repository and the referenced taggers/datasets."
+title: "English PoS Taggers Benchmark"
+version: "0.1.0"
+date-released: "2025-10-24"
+authors:
+  - family-names: "Ivan"
+    given-names: "Smirnov"
+    affiliation: "Independent Researcher"
+repository-code: "https://github.com/ivLoneas/pos-taggers-benchmark"
+abstract: >
+  A benchmark and practical comparison of multiple English part-of-speech taggers
+  (NLTK, Flair, Stanza, UDPipe, TreeTagger, spaCy) evaluated on UD_English-EWT.
+  Includes accuracy, precision/recall/F1, sequence tagging metrics (e.g. ADJ+NOUN),
+  speed/size trade-offs, and practical guidance for model selection.
+keywords:
+  - part-of-speech tagging
+  - PoS tagging
+  - NLP benchmarks
+  - English Web Treebank
+  - Universal Dependencies
+license: "MIT"
+
+references:
+  - type: software
+    title: "Natural Language Toolkit (NLTK)"
+    authors:
+      - family-names: "Bird"
+        given-names: "Steven"
+      - family-names: "Klein"
+        given-names: "Ewan"
+      - family-names: "Loper"
+        given-names: "Edward"
+    year: "2009"
+    notes: "Natural Language Processing with Python. O’Reilly Media."
+
+  - type: article
+    title: "Flair: An easy-to-use framework for state-of-the-art NLP"
+    authors:
+      - family-names: "Akbik"
+        given-names: "Alan"
+      - family-names: "Bergmann"
+        given-names: "Tanja"
+      - family-names: "Blythe"
+        given-names: "Duncan"
+      - family-names: "Rasul"
+        given-names: "Kashif"
+      - family-names: "Schweter"
+        given-names: "Stefan"
+      - family-names: "Vollgraf"
+        given-names: "Roland"
+    year: "2019"
+    journal: "Proceedings of NAACL 2019 (Demonstrations)"
+    start: "54"
+    end: "59"
+
+  - type: article
+    title: "Stanza: A Python natural language processing toolkit for many human languages"
+    authors:
+      - family-names: "Qi"
+        given-names: "Peng"
+      - family-names: "Zhang"
+        given-names: "Yuhao"
+      - family-names: "Zhang"
+        given-names: "Yuhui"
+      - family-names: "Bolton"
+        given-names: "Jason"
+      - family-names: "Manning"
+        given-names: "Christopher D."
+    year: "2020"
+    journal: "Proceedings of ACL 2020 System Demonstrations"
+    start: "101"
+    end: "108"
+
+  - type: article
+    title: "spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing"
+    authors:
+      - family-names: "Honnibal"
+        given-names: "Matthew"
+      - family-names: "Montani"
+        given-names: "Ines"
+    year: "2017"
+    notes: "Software documentation / preprint."
+
+  - type: article
+    title: "Tokenizing, POS tagging, lemmatizing and parsing UD 2.0 with UDPipe"
+    authors:
+      - family-names: "Straka"
+        given-names: "Milan"
+      - family-names: "Straková"
+        given-names: "Jana"
+    year: "2017"
+    journal: "CoNLL 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies"
+    start: "88"
+    end: "99"
+
+  - type: article
+    title: "Probabilistic part-of-speech tagging using decision trees"
+    authors:
+      - family-names: "Schmid"
+        given-names: "Helmut"
+    year: "1994"
+    conference: "International Conference on New Methods in Language Processing"
+
+  - type: article
+    title: "A gold standard dependency corpus for English: The English Web Treebank"
+    authors:
+      - family-names: "Silveira"
+        given-names: "Natalia"
+      - family-names: "Dozat"
+        given-names: "Timothy"
+      - family-names: "de Marneffe"
+        given-names: "Marie-Catherine"
+      - family-names: "Bowman"
+        given-names: "Samuel"
+      - family-names: "Connor"
+        given-names: "John"
+      - family-names: "Bauer"
+        given-names: "John"
+      - family-names: "Manning"
+        given-names: "Christopher D."
+    year: "2014"
+    conference: "LREC 2014"
+    notes: "UD_English-EWT dataset."
+
+  - type: article
+    title: "Evaluating Large Language Models on Part-of-Speech Tagging"
+    authors:
+      - family-names: "Alhessi"
+        given-names: "Abdelrahman"
+      - family-names: "Bird"
+        given-names: "Steven"
+    year: "2024"
+    journal: "arXiv preprint"
+    doi: "10.48550/arXiv.2404.18286"
+    url: "https://arxiv.org/abs/2404.18286"

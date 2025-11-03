@@ -1,0 +1,786 @@
+{
+  "format": "sentence",
+  "tagset_family": "xpos",
+  "num_sentences": 2077,
+  "num_tokens": 25455,
+  "mismatched_sentence_lengths": 0,
+  "global": {
+    "accuracy": 0.9473973679041445,
+    "precision_micro": 0.9473973679041445,
+    "recall_micro": 0.9473973679041445,
+    "f1_micro": 0.9473973679041445,
+    "precision_macro": 0.8785696318793912,
+    "recall_macro": 0.8688264968948168,
+    "f1_macro": 0.8625919714282334,
+    "precision_weighted": 0.9360794357831593,
+    "recall_weighted": 0.9473973679041445,
+    "f1_weighted": 0.9411537922685872
+  },
+  "metric_notes": {
+    "accuracy": "Token-level accuracy: percent of tokens whose tag matches gold.",
+    "micro": "Micro-averaged over tokens. For single-label token classification, micro precision/recall/F1 \u2248 accuracy.",
+    "macro": "Macro-averaged across labels (each label equal weight). Sensitive to rare labels.",
+    "weighted": "Weighted average across labels (weights = support)."
+  },
+  "per_sentence": {
+    "exact_match_accuracy": 0.6066441983630236,
+    "num_exact": 1260,
+    "num_sentences": 2077
+  },
+  "labels": [
+    "$",
+    "''",
+    ",",
+    "-LRB-",
+    "-RRB-",
+    ".",
+    ":",
+    "ADD",
+    "AFX",
+    "CC",
+    "CD",
+    "DT",
+    "EX",
+    "FW",
+    "GW",
+    "HYPH",
+    "IN",
+    "JJ",
+    "JJR",
+    "JJS",
+    "LS",
+    "MD",
+    "NFP",
+    "NN",
+    "NNP",
+    "NNPS",
+    "NNS",
+    "PDT",
+    "POS",
+    "PRP",
+    "PRP$",
+    "RB",
+    "RBR",
+    "RBS",
+    "RP",
+    "SYM",
+    "TO",
+    "UH",
+    "VB",
+    "VBD",
+    "VBG",
+    "VBN",
+    "VBP",
+    "VBZ",
+    "WDT",
+    "WP",
+    "WRB",
+    "XX",
+    "_",
+    "``"
+  ],
+  "confusion_matrix_csv": "stanford_test/confusion_matrix.csv",
+  "confusion_matrix_png": "stanford_test/confusion_matrix.png",
+  "per_class_csv": "stanford_test/per_class_metrics.csv",
+  "wrong_sentences_csv": "stanford_test/wrong_sentences.csv",
+  "pairs": {
+    "ADJ+NOUN": {
+      "tp": 829,
+      "fp": 35,
+      "fn": 67,
+      "precision": 0.9594907407407407,
+      "recall": 0.9252232142857143,
+      "f1": 0.9420454545454546
+    },
+    "NOUN+NOUN": {
+      "tp": 463,
+      "fp": 107,
+      "fn": 99,
+      "precision": 0.8122807017543859,
+      "recall": 0.8238434163701067,
+      "f1": 0.8180212014134275
+    },
+    "PROPN+PROPN": {
+      "tp": 523,
+      "fp": 149,
+      "fn": 79,
+      "precision": 0.7782738095238095,
+      "recall": 0.8687707641196013,
+      "f1": 0.8210361067503925
+    },
+    "ADJ+PROPN": {
+      "tp": 27,
+      "fp": 26,
+      "fn": 10,
+      "precision": 0.5094339622641509,
+      "recall": 0.7297297297297297,
+      "f1": 0.6
+    }
+  },
+  "pair_examples": {
+    "ADJ+NOUN": {
+      "false_positives": [
+        {
+          "sentence_index": 68,
+          "position": 11,
+          "pair_words": "dazzling PR",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "So hear we are , two weeks later , after that dazzling PR display two weeks ago by Powell and Annan , and the situation on the ground in Darfur appears basically unchanged ."
+        },
+        {
+          "sentence_index": 75,
+          "position": 6,
+          "pair_words": "company's company",
+          "gold_pair": "_+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "_",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "It doesn't does n't change the company's company 's intrinsic worth , and as the article notes , the company might be added to a major index once the shares get more liquid ."
+        },
+        {
+          "sentence_index": 101,
+          "position": 20,
+          "pair_words": "Arab boycott",
+          "gold_pair": "PROPN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "That the Iraqi Islamic Party is now contemplating leaving the Allawi government raises the question of whether a mass Sunni Arab boycott of the elections is in the offing , thus fatally weakening the legitimacy of any new government ."
+        },
+        {
+          "sentence_index": 162,
+          "position": 15,
+          "pair_words": "extremist form",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "Because Usamah is Saudi , my guess is that they were especially influenced by an extremist form of the Wahhabi school of Islam that predominates among Saudia's Saudia 's some 15 million citizens ."
+        },
+        {
+          "sentence_index": 169,
+          "position": 23,
+          "pair_words": "German Peasant",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "Monotheism and Holy War obviously does have a violent interpretation of Salafism , rather as the the leaders of the so - called German Peasant Rebellion among early Protestants did ."
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 1,
+          "position": 19,
+          "pair_words": "fledged operating",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "VERB+NOUN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "VBN",
+            "NN"
+          ],
+          "sentence_text": "What if Google expanded on its search - engine ( and now e-mail ) wares into a full - fledged operating system ?"
+        },
+        {
+          "sentence_index": 3,
+          "position": 12,
+          "pair_words": "little nostalgic",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+ADJ",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "JJ"
+          ],
+          "sentence_text": "( And , by the way , is anybody else just a little nostalgic for the days when that was a good thing ? )"
+        },
+        {
+          "sentence_index": 25,
+          "position": 8,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "The United States doesn't does n't believe the Iranian Government ."
+        },
+        {
+          "sentence_index": 26,
+          "position": 4,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "One can suspect the Iranian Government ."
+        },
+        {
+          "sentence_index": 28,
+          "position": 9,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "I read an Article in Time magazine accusing the Iranian Government of being willing to start a nuclear war and I sympathise with the Article ."
+        }
+      ]
+    },
+    "NOUN+NOUN": {
+      "false_positives": [
+        {
+          "sentence_index": 43,
+          "position": 16,
+          "pair_words": "city's city",
+          "gold_pair": "_+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "_",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "Let aggressive ( American ) leaders and soldiers know that we are capable of protecting the city's city 's security and safety , and ask them to lift their hands from the city . \""
+        },
+        {
+          "sentence_index": 46,
+          "position": 16,
+          "pair_words": "country's country",
+          "gold_pair": "_+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "_",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "Cities such as Falluja received special treatment from Saddam and enjoyed a disproportionate share of the country's country 's wealth and power ."
+        },
+        {
+          "sentence_index": 68,
+          "position": 12,
+          "pair_words": "PR display",
+          "gold_pair": "PROPN+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "So hear we are , two weeks later , after that dazzling PR display two weeks ago by Powell and Annan , and the situation on the ground in Darfur appears basically unchanged ."
+        },
+        {
+          "sentence_index": 81,
+          "position": 3,
+          "pair_words": "wife's wife",
+          "gold_pair": "_+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "_",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "He mentions his wife's wife 's death having an effect on him ."
+        },
+        {
+          "sentence_index": 84,
+          "position": 14,
+          "pair_words": "terrorist group",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "NOUN+NOUN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "sentence_text": "On the same day Palestinians protest in support of Hezbollah and Syria , the terrorist group Hamas has indicated it will participate in the scheduled upcoming Parliamentary elections ."
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 59,
+          "position": 63,
+          "pair_words": "A section",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "PROPN+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "sentence_text": "Important news such as President Bush's Bush 's miniscule calibrations on his marriage amendment / anti-gay ( update : he's he 's not against gays in the bedroom , just at the altar , where of course their relationships should not only be frowned upon but should be constitutionally excluded ) has pushed Sudan not just off the front pages , or the A section , but out of the NY Times and Washington Post completely ."
+        },
+        {
+          "sentence_index": 162,
+          "position": 15,
+          "pair_words": "extremist form",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "Because Usamah is Saudi , my guess is that they were especially influenced by an extremist form of the Wahhabi school of Islam that predominates among Saudia's Saudia 's some 15 million citizens ."
+        },
+        {
+          "sentence_index": 185,
+          "position": 32,
+          "pair_words": "terrorist component",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "If you believe crackpot theories instead of focusing on the reality -- that was an al - Qaeda operation mainly carried out by al - Gamaa al - Islamiyyah , an Egyptian terrorist component allied with Bin Laden -- then you will concentrate on the wrong threat ."
+        },
+        {
+          "sentence_index": 201,
+          "position": 26,
+          "pair_words": "Ops team",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "PROPN+NOUN",
+          "gold_tags_pair": [
+            "NNS",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "sentence_text": "Clinton had worked out a deal with Pakistani Prime Minister Nawaz Sharif in summer of 1999 that would have allowed the US to send a Special Ops team in after Bin Laden in Qandahar , based from Pakistan ."
+        },
+        {
+          "sentence_index": 324,
+          "position": 14,
+          "pair_words": "class tonite",
+          "gold_pair": "NOUN+NOUN",
+          "pred_pair": "NOUN+ADV",
+          "gold_tags_pair": [
+            "NN",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NN",
+            "RB"
+          ],
+          "sentence_text": "I'm I 'm not sure , but I think that he's he 's got class tonite , too ."
+        }
+      ]
+    },
+    "PROPN+PROPN": {
+      "false_positives": [
+        {
+          "sentence_index": 4,
+          "position": 5,
+          "pair_words": "Google's Google",
+          "gold_pair": "_+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "_",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "This BuzzMachine post argues that Google's Google 's rush toward ubiquity might backfire -- which we've we 've all heard before , but it's it 's particularly well - put in this post ."
+        },
+        {
+          "sentence_index": 18,
+          "position": 15,
+          "pair_words": "US Military",
+          "gold_pair": "PROPN+NOUN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "This Fallujah operation my turn out to be the most important operation done by the US Military since the end of the war ."
+        },
+        {
+          "sentence_index": 19,
+          "position": 8,
+          "pair_words": "Google's Google",
+          "gold_pair": "_+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "_",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "Let me join the chorus of annoyance over Google's Google 's new toolbar , which , as noted in the linked article , commits just about every sin an online marketer could commit , and makes up a few new ones besides ."
+        },
+        {
+          "sentence_index": 49,
+          "position": 8,
+          "pair_words": "Hamdan v.",
+          "gold_pair": "PROPN+ADP",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "IN"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "The Supreme Court announced its ruling today in Hamdan v. Rumsfeld divided along idelogical lines with John Roberts abstaining due to his involvement at the D.C. Circuit level and Anthony Kennedy joining the liberals in a 5 - 3 decision that is 185 pages long ."
+        },
+        {
+          "sentence_index": 49,
+          "position": 9,
+          "pair_words": "v. Rumsfeld",
+          "gold_pair": "ADP+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "IN",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "The Supreme Court announced its ruling today in Hamdan v. Rumsfeld divided along idelogical lines with John Roberts abstaining due to his involvement at the D.C. Circuit level and Anthony Kennedy joining the liberals in a 5 - 3 decision that is 185 pages long ."
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 28,
+          "position": 5,
+          "pair_words": "Time magazine",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "PROPN+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "sentence_text": "I read an Article in Time magazine accusing the Iranian Government of being willing to start a nuclear war and I sympathise with the Article ."
+        },
+        {
+          "sentence_index": 124,
+          "position": 5,
+          "pair_words": "High Wycombe",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "Waseem Kayani , 28 , High Wycombe"
+        },
+        {
+          "sentence_index": 132,
+          "position": 6,
+          "pair_words": "High Wycombe",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "Shazad Khuram Ali , 27 , High Wycombe"
+        },
+        {
+          "sentence_index": 133,
+          "position": 5,
+          "pair_words": "London E10",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "PROPN+NOUN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NN"
+          ],
+          "sentence_text": "Tanvir Hussain , 24 , London E10"
+        },
+        {
+          "sentence_index": 134,
+          "position": 10,
+          "pair_words": "High Wycombe",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "Umar Islam , 28 , ( born Brian Young ) High Wycombe"
+        }
+      ]
+    },
+    "ADJ+PROPN": {
+      "false_positives": [
+        {
+          "sentence_index": 25,
+          "position": 8,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "The United States doesn't does n't believe the Iranian Government ."
+        },
+        {
+          "sentence_index": 26,
+          "position": 4,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "One can suspect the Iranian Government ."
+        },
+        {
+          "sentence_index": 28,
+          "position": 9,
+          "pair_words": "Iranian Government",
+          "gold_pair": "ADJ+NOUN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "I read an Article in Time magazine accusing the Iranian Government of being willing to start a nuclear war and I sympathise with the Article ."
+        },
+        {
+          "sentence_index": 124,
+          "position": 5,
+          "pair_words": "High Wycombe",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "Waseem Kayani , 28 , High Wycombe"
+        },
+        {
+          "sentence_index": 132,
+          "position": 6,
+          "pair_words": "High Wycombe",
+          "gold_pair": "PROPN+PROPN",
+          "pred_pair": "ADJ+PROPN",
+          "gold_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "sentence_text": "Shazad Khuram Ali , 27 , High Wycombe"
+        }
+      ],
+      "false_negatives": [
+        {
+          "sentence_index": 68,
+          "position": 11,
+          "pair_words": "dazzling PR",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "ADJ+NOUN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "NN"
+          ],
+          "sentence_text": "So hear we are , two weeks later , after that dazzling PR display two weeks ago by Powell and Annan , and the situation on the ground in Darfur appears basically unchanged ."
+        },
+        {
+          "sentence_index": 101,
+          "position": 19,
+          "pair_words": "Sunni Arab",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "ADJ+ADJ",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "JJ",
+            "JJ"
+          ],
+          "sentence_text": "That the Iraqi Islamic Party is now contemplating leaving the Allawi government raises the question of whether a mass Sunni Arab boycott of the elections is in the offing , thus fatally weakening the legitimacy of any new government ."
+        },
+        {
+          "sentence_index": 872,
+          "position": 0,
+          "pair_words": "Key Delhi",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "Key Delhi blast suspect arrested"
+        },
+        {
+          "sentence_index": 968,
+          "position": 6,
+          "pair_words": "Modern China",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "--- The Art of Calligraphy in Modern China ( British Museum Press , 2002 )"
+        },
+        {
+          "sentence_index": 1348,
+          "position": 6,
+          "pair_words": "French Indochina",
+          "gold_pair": "ADJ+PROPN",
+          "pred_pair": "PROPN+PROPN",
+          "gold_tags_pair": [
+            "JJ",
+            "NNP"
+          ],
+          "pred_tags_pair": [
+            "NNP",
+            "NNP"
+          ],
+          "sentence_text": "You need to check out the French Indochina War ( 1946 - 1954 ) not the Vietnam War ( 1957 - 1975 ) ."
+        }
+      ]
+    }
+  }
+}
