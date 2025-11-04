@@ -247,7 +247,7 @@ If you use this benchmark, please cite this repository and the original tools/da
 
 **This repository**
 
-Ivan Smirnov. (2025). *English PoS Taggers Benchmark* (Version 0.1.0). GitHub. https://github.com/ivLoneas/pos-taggers-benchmark]
+Ivan Smirnov. (2025). *English PoS Taggers Benchmark* (Version 0.1.0). GitHub. https://github.com/ivLoneas/pos-taggers-benchmark
 
 **NLTK**
 
