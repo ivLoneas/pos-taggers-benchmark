@@ -1,0 +1,117 @@
+{
+  "format": "sentence",
+  "model": "en_core_web_sm",
+  "model_path": null,
+  "pipe_components": [
+    "tok2vec",
+    "tagger",
+    "parser",
+    "attribute_ruler",
+    "lemmatizer",
+    "ner"
+  ],
+  "use_spacy_tokenizer": false,
+  "batch_size": 1000,
+  "sentences": 2077,
+  "tokens": 25455,
+  "model_time_seconds": "2.286721 ± 0.016593 s",
+  "evaluation_loop_time_seconds": "2.286721 ± 0.016593 s",
+  "model_throughput_tokens_per_sec": "11132.185 ± 80.637 tok/s",
+  "overall_throughput_tokens_per_sec": "11132.184 ± 80.636 tok/s",
+  "model_time_seconds_mean": 2.286721,
+  "model_time_seconds_stdev": 0.016593,
+  "model_time_seconds_min": 2.265227,
+  "model_time_seconds_max": 2.315224,
+  "evaluation_loop_time_seconds_mean": 2.286721,
+  "evaluation_loop_time_seconds_stdev": 0.016593,
+  "evaluation_loop_time_seconds_min": 2.265227,
+  "evaluation_loop_time_seconds_max": 2.315224,
+  "model_throughput_tokens_per_sec_mean": 11132.185,
+  "model_throughput_tokens_per_sec_stdev": 80.637,
+  "overall_throughput_tokens_per_sec_mean": 11132.184,
+  "overall_throughput_tokens_per_sec_stdev": 80.636,
+  "timestamp_utc": "2025-11-05T13:52:24.202817+00:00",
+  "output_csv": null,
+  "runs": [
+    {
+      "run": 1,
+      "model_time_seconds": 2.2652266250006505,
+      "evaluation_loop_time_seconds": 2.2652270830003545,
+      "model_throughput_tokens_per_sec": 11237.286247239253,
+      "overall_throughput_tokens_per_sec": 11237.28397520489,
+      "tokens": 25455
+    },
+    {
+      "run": 2,
+      "model_time_seconds": 2.275979166999605,
+      "evaluation_loop_time_seconds": 2.275979375001043,
+      "model_throughput_tokens_per_sec": 11184.197276092387,
+      "overall_throughput_tokens_per_sec": 11184.196253970154,
+      "tokens": 25455
+    },
+    {
+      "run": 3,
+      "model_time_seconds": 2.29953100000057,
+      "evaluation_loop_time_seconds": 2.2995311670019873,
+      "model_throughput_tokens_per_sec": 11069.648550071162,
+      "overall_throughput_tokens_per_sec": 11069.647746147726,
+      "tokens": 25455
+    },
+    {
+      "run": 4,
+      "model_time_seconds": 2.3152237920003245,
+      "evaluation_loop_time_seconds": 2.31522404199859,
+      "model_throughput_tokens_per_sec": 10994.61749138609,
+      "overall_throughput_tokens_per_sec": 10994.61630418552,
+      "tokens": 25455
+    },
+    {
+      "run": 5,
+      "model_time_seconds": 2.304838000000018,
+      "evaluation_loop_time_seconds": 2.3048382499982836,
+      "model_throughput_tokens_per_sec": 11044.160153555174,
+      "overall_throughput_tokens_per_sec": 11044.15895563125,
+      "tokens": 25455
+    },
+    {
+      "run": 6,
+      "model_time_seconds": 2.292006833002233,
+      "evaluation_loop_time_seconds": 2.292006958999991,
+      "model_throughput_tokens_per_sec": 11105.987832792469,
+      "overall_throughput_tokens_per_sec": 11105.987222266587,
+      "tokens": 25455
+    },
+    {
+      "run": 7,
+      "model_time_seconds": 2.287808375000168,
+      "evaluation_loop_time_seconds": 2.2878085000011197,
+      "model_throughput_tokens_per_sec": 11126.368920647968,
+      "overall_throughput_tokens_per_sec": 11126.368312727023,
+      "tokens": 25455
+    },
+    {
+      "run": 8,
+      "model_time_seconds": 2.2864893330006453,
+      "evaluation_loop_time_seconds": 2.2864895420025277,
+      "model_throughput_tokens_per_sec": 11132.787558905624,
+      "overall_throughput_tokens_per_sec": 11132.786541287342,
+      "tokens": 25455
+    },
+    {
+      "run": 9,
+      "model_time_seconds": 2.272419125001761,
+      "evaluation_loop_time_seconds": 2.2724193750000268,
+      "model_throughput_tokens_per_sec": 11201.718785032788,
+      "overall_throughput_tokens_per_sec": 11201.717552685319,
+      "tokens": 25455
+    },
+    {
+      "run": 10,
+      "model_time_seconds": 2.267689958000119,
+      "evaluation_loop_time_seconds": 2.267690083001071,
+      "model_throughput_tokens_per_sec": 11225.079473584132,
+      "overall_throughput_tokens_per_sec": 11225.078854828673,
+      "tokens": 25455
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "format": "sentence",
+  "model_path": "/Users/ivansmirnov/PycharmProjects/pos_raitings_2/udpipe/english-ewt-ud-2.5-191206.udpipe",
+  "batch_size": 3000,
+  "parse": false,
+  "sentences": 2077,
+  "tokens": 25455,
+  "model_time_seconds": "2.205375 ± 0.010689 s",
+  "evaluation_loop_time_seconds": "2.205799 ± 0.010687 s",
+  "model_throughput_tokens_per_sec": "11542.498 ± 55.536 tok/s",
+  "overall_throughput_tokens_per_sec": "11540.278 ± 55.506 tok/s",
+  "model_time_seconds_mean": 2.205375,
+  "model_time_seconds_stdev": 0.010689,
+  "model_time_seconds_min": 2.193583,
+  "model_time_seconds_max": 2.232243,
+  "evaluation_loop_time_seconds_mean": 2.205799,
+  "evaluation_loop_time_seconds_stdev": 0.010687,
+  "evaluation_loop_time_seconds_min": 2.194004,
+  "evaluation_loop_time_seconds_max": 2.232655,
+  "model_throughput_tokens_per_sec_mean": 11542.498,
+  "model_throughput_tokens_per_sec_stdev": 55.536,
+  "overall_throughput_tokens_per_sec_mean": 11540.278,
+  "overall_throughput_tokens_per_sec_stdev": 55.506,
+  "timestamp_utc": "2025-11-05T13:46:45.385058+00:00",
+  "output_csv": null,
+  "runs": [
+    {
+      "run": 1,
+      "model_time_seconds": 2.2056130829987524,
+      "evaluation_loop_time_seconds": 2.2060410420017433,
+      "model_throughput_tokens_per_sec": 11541.008799871359,
+      "overall_throughput_tokens_per_sec": 11538.769911960633,
+      "tokens": 25455
+    },
+    {
+      "run": 2,
+      "model_time_seconds": 2.2084342499983904,
+      "evaluation_loop_time_seconds": 2.208883750001405,
+      "model_throughput_tokens_per_sec": 11526.265724242663,
+      "overall_throughput_tokens_per_sec": 11523.920170078578,
+      "tokens": 25455
+    },
+    {
+      "run": 3,
+      "model_time_seconds": 2.1935827919987787,
+      "evaluation_loop_time_seconds": 2.1940039159999287,
+      "model_throughput_tokens_per_sec": 11604.303285405318,
+      "overall_throughput_tokens_per_sec": 11602.075918993403,
+      "tokens": 25455
+    },
+    {
+      "run": 4,
+      "model_time_seconds": 2.2322425000020303,
+      "evaluation_loop_time_seconds": 2.2326554999999644,
+      "model_throughput_tokens_per_sec": 11403.330955295783,
+      "overall_throughput_tokens_per_sec": 11401.221549854155,
+      "tokens": 25455
+    },
+    {
+      "run": 5,
+      "model_time_seconds": 2.20849462499973,
+      "evaluation_loop_time_seconds": 2.208913875001599,
+      "model_throughput_tokens_per_sec": 11525.95062349455,
+      "overall_throughput_tokens_per_sec": 11523.763007727755,
+      "tokens": 25455
+    },
+    {
+      "run": 6,
+      "model_time_seconds": 2.202964833999431,
+      "evaluation_loop_time_seconds": 2.203387000001385,
+      "model_throughput_tokens_per_sec": 11554.88258693038,
+      "overall_throughput_tokens_per_sec": 11552.668686882513,
+      "tokens": 25455
+    },
+    {
+      "run": 7,
+      "model_time_seconds": 2.198178583999834,
+      "evaluation_loop_time_seconds": 2.198600832998636,
+      "model_throughput_tokens_per_sec": 11580.04185159595,
+      "overall_throughput_tokens_per_sec": 11577.81786395593,
+      "tokens": 25455
+    },
+    {
+      "run": 8,
+      "model_time_seconds": 2.2059937080011878,
+      "evaluation_loop_time_seconds": 2.206417416000477,
+      "model_throughput_tokens_per_sec": 11539.017499312964,
+      "overall_throughput_tokens_per_sec": 11536.801611248024,
+      "tokens": 25455
+    },
+    {
+      "run": 9,
+      "model_time_seconds": 2.201568959000724,
+      "evaluation_loop_time_seconds": 2.2019882919994416,
+      "model_throughput_tokens_per_sec": 11562.208803831352,
+      "overall_throughput_tokens_per_sec": 11560.006968468684,
+      "tokens": 25455
+    },
+    {
+      "run": 10,
+      "model_time_seconds": 2.1966743749981106,
+      "evaluation_loop_time_seconds": 2.1970992499991553,
+      "model_throughput_tokens_per_sec": 11587.971476210212,
+      "overall_throughput_tokens_per_sec": 11585.73059455998,
+      "tokens": 25455
+    }
+  ]
+}

@@ -6,22 +6,25 @@ This repository presents a benchmark of leading open-source English part-of-spee
 
 ## TL;DR
 
+The table below summarizes the benchmark results across key metrics:
+
+| Model              | Size      | Accuracy | Precision | Recall | F1     | ADJ+NOUN F1 | Throughput* (wps) |
+|--------------------|-----------|----------|-----------|--------|--------|-------------|--------------|
+| UDPipe             | ~17 MB    | 0.9246   | 0.9126    | 0.9246 | 0.9181 | 0.8989      | 11542        |
+| Stanford CoreNLP   | ~50 MB    | **0.9474** | **0.9361** | **0.9474** | **0.9412** | **0.9420** | 3804         |
+| TreeTagger         | ~3 MB     | 0.7566   | 0.8658    | 0.7566 | 0.7685 | 0.8683      | **133456**   |
+| spaCy              | ~12 MB    | 0.9119   | 0.9049    | 0.9119 | 0.9061 | 0.9088      | 11237        |
+| NLTK               | **~1 MB** | 0.8384   | 0.8276    | 0.8384 | 0.8270 | 0.7932      | 117256       |
+| Flair              | ~30 MB    | 0.9217   | 0.9154    | 0.9217 | 0.9159 | 0.9239      | 1613         |
+
+**Note.** Throughput (words per second) was measured on an Apple M4 Max with 36 GB RAM. Values are for relative 
+comparison only and will vary by hardware, dataset, and configuration.
+
 Among all evaluated models, [Stanford Stanza](https://stanfordnlp.github.io/stanza/) achieves the **highest overall accuracy and tagging consistency**, making it the recommended baseline for most research and production use cases.  
 However, its larger model size results in **higher latency** compared to lighter alternatives.  
 
-If **speed or memory efficiency** is a priority, **spaCy** provides a strong balance between performance and accuracy.  
+If **speed or memory efficiency** is a priority, **spaCy** or **UDPipe** provides a strong balance between performance and accuracy.  
 For lightweight or Python-native projects where maximum throughput is required, **NLTK** remains a practical fallback despite its lower tag quality.
-
-The table below summarizes the benchmark results across key metrics:
-
-| Model       | Size      | Accuracy | Precision | Recall | F1    | ADJ+NOUN F1 |
-|-------------|-----------|----------|-----------|--------|-------|--------------|
-| udpipe      | ~17 MB    | 0.9246   | 0.9126    | 0.9246 | 0.9181 | 0.8989       |
-| stanford    | ~50 MB    | **0.9474** | **0.9361** | **0.9474** | **0.9412** | **0.9420** |
-| tree_tagger | ~3 MB     | 0.7566   | 0.8658    | 0.7566 | 0.7685 | 0.8683       |
-| spacy       | ~12 MB    | 0.9119   | 0.9049    | 0.9119 | 0.9061 | 0.9088       |
-| nltk        | **~1 MB** | 0.8384   | 0.8276    | 0.8384 | 0.8270 | 0.7932       |
-| flair       | ~30 MB    | 0.9217   | 0.9154    | 0.9217 | 0.9159 | 0.9239       |
 
 
 Evaluations were performed using the **Universal Dependencies English Web Treebank (UD_English-EWT)** dataset.  
@@ -44,7 +47,6 @@ This benchmark focuses exclusively on **XPOS tag predictions**.
 - [Future work](#future-work)
   - [Dataset](#dataset-1)
   - [UPOS results](#upos-results)
-  - [Performanse](#performanse)
 - [Licence](#licence)
 - [Contributions](#contributions)
 
@@ -216,12 +218,6 @@ providing useful and practically relevant information.
 
 ### UPOS results
 Currently only XPOS tags performance is evaluated. It is planned to assess it for UPOS.
-
----
-
-### Performanse
-
-Work in progress
 
 ---
 

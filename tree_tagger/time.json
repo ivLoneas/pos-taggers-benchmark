@@ -1,0 +1,136 @@
+{
+  "format": "sentence",
+  "framework": "treetagger",
+  "tt_cmd": "/Users/ivansmirnov/Downloads/bin/tree-tagger",
+  "tt_params": "/Users/ivansmirnov/Downloads/lib/english.par",
+  "tt_args_requested": "",
+  "tt_args_effective": [
+    "-token"
+  ],
+  "batch_hint": -1,
+  "sentences": 2077,
+  "tokens": 25455,
+  "model_time_seconds": "0.190757 ± 0.002049 s",
+  "evaluation_loop_time_seconds": "0.397338 ± 0.009114 s",
+  "model_throughput_tokens_per_sec": "133456.132 ± 1431.699 tok/s",
+  "overall_throughput_tokens_per_sec": "64093.655 ± 1444.884 tok/s",
+  "model_time_seconds_mean": 0.190757,
+  "model_time_seconds_stdev": 0.002049,
+  "model_time_seconds_min": 0.187871,
+  "model_time_seconds_max": 0.194204,
+  "evaluation_loop_time_seconds_mean": 0.397338,
+  "evaluation_loop_time_seconds_stdev": 0.009114,
+  "evaluation_loop_time_seconds_min": 0.386275,
+  "evaluation_loop_time_seconds_max": 0.416262,
+  "model_throughput_tokens_per_sec_mean": 133456.132,
+  "model_throughput_tokens_per_sec_stdev": 1431.699,
+  "overall_throughput_tokens_per_sec_mean": 64093.655,
+  "overall_throughput_tokens_per_sec_stdev": 1444.884,
+  "parsed_lines_mean": 25455.0,
+  "parsed_lines_min": 25455,
+  "parsed_lines_max": 25455,
+  "timestamp_utc": "2025-11-05T14:19:06.364573+00:00",
+  "output_csv": null,
+  "runs": [
+    {
+      "run": 1,
+      "model_time_seconds": 0.19420395800261758,
+      "evaluation_loop_time_seconds": 0.3992755830004171,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 131073.5386745151,
+      "overall_throughput_tokens_per_sec": 63752.95931876057
+    },
+    {
+      "run": 2,
+      "model_time_seconds": 0.18787075000000186,
+      "evaluation_loop_time_seconds": 0.3908508749991597,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 135492.08698001018,
+      "overall_throughput_tokens_per_sec": 65127.14088219638
+    },
+    {
+      "run": 3,
+      "model_time_seconds": 0.1910485830012476,
+      "evaluation_loop_time_seconds": 0.4049623339997197,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 133238.36063120014,
+      "overall_throughput_tokens_per_sec": 62857.69777299243
+    },
+    {
+      "run": 4,
+      "model_time_seconds": 0.1925928329983435,
+      "evaluation_loop_time_seconds": 0.3963197910015879,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 132170.02732505076,
+      "overall_throughput_tokens_per_sec": 64228.43516259831
+    },
+    {
+      "run": 5,
+      "model_time_seconds": 0.19239479200041387,
+      "evaluation_loop_time_seconds": 0.3916674159991089,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 132306.07614339812,
+      "overall_throughput_tokens_per_sec": 64991.36502092355
+    },
+    {
+      "run": 6,
+      "model_time_seconds": 0.1887869159982074,
+      "evaluation_loop_time_seconds": 0.3904456250020303,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 134834.55601468537,
+      "overall_throughput_tokens_per_sec": 65194.73742308583
+    },
+    {
+      "run": 7,
+      "model_time_seconds": 0.1919505419973575,
+      "evaluation_loop_time_seconds": 0.392382792000717,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 132612.2850976395,
+      "overall_throughput_tokens_per_sec": 64872.87546481775
+    },
+    {
+      "run": 8,
+      "model_time_seconds": 0.19067670900039957,
+      "evaluation_loop_time_seconds": 0.4049391669977922,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 133498.2134600753,
+      "overall_throughput_tokens_per_sec": 62861.29392896881
+    },
+    {
+      "run": 9,
+      "model_time_seconds": 0.18879795799875865,
+      "evaluation_loop_time_seconds": 0.41626212499977555,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 134826.67010713837,
+      "overall_throughput_tokens_per_sec": 61151.37186697859
+    },
+    {
+      "run": 10,
+      "model_time_seconds": 0.1892431249980291,
+      "evaluation_loop_time_seconds": 0.38627483299933374,
+      "parsed_lines": 25455,
+      "args_used": "-token",
+      "tokens": 25455,
+      "model_throughput_tokens_per_sec": 134509.50992415237,
+      "overall_throughput_tokens_per_sec": 65898.67582712516
+    }
+  ]
+}
