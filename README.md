@@ -20,7 +20,7 @@ The table below summarizes the benchmark results across key metrics:
 **Note.** Throughput (words per second) was measured on an Apple M4 Max with 36 GB RAM. Values are for relative 
 comparison only and will vary by hardware, dataset, and configuration.
 
-Among all evaluated models, [Stanford Stanza](https://stanfordnlp.github.io/stanza/) achieves the **highest overall accuracy and tagging consistency**, making it the recommended baseline for most research and production use cases.  
+Among all evaluated models, [Stanford Stanza](https://stanfordnlp.github.io/stanza/) achieves the **highest overall accuracy and tagging consistency**, making it the recommended baseline for most use cases.  
 However, its larger model size results in **higher latency** compared to lighter alternatives.  
 
 If **speed or memory efficiency** is a priority, **spaCy** or **UDPipe** provides a strong balance between performance and accuracy.  
@@ -114,9 +114,6 @@ All models were evaluated using their **default pretrained English models** and 
 | 5 | **TreeTagger (English)** | 3.2.3 | A probabilistic decision-tree-based PoS tagger designed for linguistic research; non-commercial license. |
 | 6 | **spaCy** (`en_core_web_sm`) | 3.8.0 | An efficient CNN-based NLP pipeline optimized for production and real-time tagging. |
 
-> ⚠️ **Licensing note:** TreeTagger is distributed under a **non-commercial license** and is **not included** in this repository.  
-> Users wishing to reproduce its results must download it separately from its [official source](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) and comply with its original license terms.
-
 Only models that support **XPOS tagging** were included in this benchmark.
 
 ---
@@ -188,6 +185,8 @@ However, as the largest model, it also has the lowest inference speed.
 
 If the performance is critical factor, consider **SpaCy** or **UDPipe** as faster alternatives. 
 
+Important note, that only **SpaCy** model are available to use in production. 
+
 The **NLTK** tagger is the smallest and fastest among the tested models. 
 Thus, for applications where processing speed is more important than prediction quality,
 NLTK may be a suitable choice—particularly if the project is Python-native.
@@ -224,16 +223,9 @@ Currently only XPOS tags performance is evaluated. It is planned to assess it fo
 ## Licence
 
 All original code and benchmark materials in this repository are released under the [MIT License](LICENSE), 
-and may be freely used, modified, and distributed for both commercial and non-commercial purposes.
+and may be freely used, modified, and distributed for non-commercial purposes.
 
-However, please note:
-
-- **TreeTagger** (by Helmut Schmid, University of Stuttgart) is **not included** in this repository and is licensed separately 
-  for **non-commercial use only**.  
-- Any results or references to TreeTagger in this benchmark were generated using the publicly available 
-  non-commercial version.  
-- If you wish to reproduce the TreeTagger results, you must download it from its [official website](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) 
-  and comply with its original license terms.
+**SpaCy** pretrained model is free for commercial usage. 
 
 ---
 
