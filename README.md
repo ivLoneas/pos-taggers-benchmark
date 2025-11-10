@@ -13,7 +13,7 @@ The table below summarizes the benchmark results across key metrics:
 | UDPipe             | ~17 MB    | 0.9246   | 0.9126    | 0.9246 | 0.9181 | 0.8989      | 11542        |
 | Stanford CoreNLP   | ~50 MB    | **0.9474** | **0.9361** | **0.9474** | **0.9412** | **0.9420** | 3804         |
 | TreeTagger         | ~3 MB     | 0.7566   | 0.8658    | 0.7566 | 0.7685 | 0.8683      | **133456**   |
-| spaCy              | ~12 MB    | 0.9119   | 0.9049    | 0.9119 | 0.9061 | 0.9088      | 11237        |
+| SpaCy              | ~12 MB    | 0.9119   | 0.9049    | 0.9119 | 0.9061 | 0.9088      | 11237        |
 | NLTK               | **~1 MB** | 0.8384   | 0.8276    | 0.8384 | 0.8270 | 0.7932      | 117256       |
 | Flair              | ~30 MB    | 0.9217   | 0.9154    | 0.9217 | 0.9159 | 0.9239      | 1613         |
 
@@ -23,7 +23,7 @@ comparison only and will vary by hardware, dataset, and configuration.
 Among all evaluated models, [Stanford Stanza](https://stanfordnlp.github.io/stanza/) achieves the **highest overall accuracy and tagging consistency**, making it the recommended baseline for most use cases.  
 However, its larger model size results in **higher latency** compared to lighter alternatives.  
 
-If **speed or memory efficiency** is a priority, **spaCy** or **UDPipe** provides a strong balance between performance and accuracy.  
+If **speed or memory efficiency** is a priority, **SpaCy** or **UDPipe** provides a strong balance between performance and accuracy.  
 For lightweight or Python-native projects where maximum throughput is required, **NLTK** remains a practical fallback despite its lower tag quality.
 
 
@@ -112,7 +112,7 @@ All models were evaluated using their **default pretrained English models** and 
 | 3 | **Stanza (Stanford NLP)** | 1.11.0 | A neural pipeline based on BiLSTM-CRF architecture, trained on Universal Dependencies data. |
 | 4 | **UDPipe 1** (`english-ewt-ud-2.5-191206`) | 2019.12.06 | A neural network–based tagger trained on the UD English EWT dataset; results may reflect data overlap. |
 | 5 | **TreeTagger (English)** | 3.2.3 | A probabilistic decision-tree-based PoS tagger designed for linguistic research; non-commercial license. |
-| 6 | **spaCy** (`en_core_web_sm`) | 3.8.0 | An efficient CNN-based NLP pipeline optimized for production and real-time tagging. |
+| 6 | **SpaCy** (`en_core_web_sm`) | 3.8.0 | An efficient CNN-based NLP pipeline optimized for production and real-time tagging. |
 
 Only models that support **XPOS tagging** were included in this benchmark.
 
@@ -249,9 +249,9 @@ Akbik, A., Bergmann, T., Blythe, D., Rasul, K., Schweter, S., & Vollgraf, R. (20
 
 Qi, P., Zhang, Y., Zhang, Y., Bolton, J., & Manning, C. D. (2020). Stanza: A Python natural language processing toolkit for many human languages. *Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations*, 101–108.
 
-**spaCy**
+**SpaCy**
 
-Honnibal, M., & Montani, I. (2017). *spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing*. Software documentation / preprint.
+Honnibal, M., & Montani, I. (2017). *SpaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing*. Software documentation / preprint.
 
 **UDPipe**
 
